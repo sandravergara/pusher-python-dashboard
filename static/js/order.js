@@ -34,11 +34,13 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
+
 // Configure Pusher instance
-const pusher = new Pusher("71198b6c72378c71016c", {
-    cluster: "ap1",
-    encrypted: true
+const pusher = new Pusher('PUSH_APP_KEY', {
+  cluster: 'PUSHER_APP_CLUSTER',
+  encrypted: true
 });
+
 
 // Subscribe to poll trigger
 var orderChannel = pusher.subscribe('order');

@@ -4,13 +4,14 @@ from pusher import Pusher
 app = Flask(__name__)
 
 
-# Configre pusher object
+# Configure pusher object
 pusher = Pusher(
-app_id = "814733",
-key = "71198b6c72378c71016c",
-secret = "2c0ab920339934fc784a",
-cluster = "ap1",
+app_id = 'PUSHER_APP_ID',
+key = 'PUSHER_APP_KEY',
+secret = 'PUSHER_APP_SECRET',
+cluster = 'PUSHER_APP_CLUSTER',
 ssl=True)
+
 
 @app.route('/')
 def index():

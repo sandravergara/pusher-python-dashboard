@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pusher Python Realtime Dashboard</title>
+    <!-- <title>Pusher Python Realtime Dashboard</title> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+          
+
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
 </head>
 <body>
-    <form method="post" action="/orders">
-        <h3>Place a new order</h3>
-        <input type="number" name="units" placeholder="units"><br>
-        <input type="submit" name="Submit">
-    </form>
-    <form method="post" action="/message">
-        <h3>Send a new message</h3>
-        <input type="text" name="name" placeholder="name here"><br>
-        <textarea  name="message" placeholder="message here"></textarea><br>
-        <input type="submit" name="Submit">
-    </form>
-    <form method="post" action="/customer">
-        <h3>Add new customer</h3>
-        <input type="text" name="name" placeholder="name here"><br>
-        <input type="text" name="position" placeholder="position here"><br>
-        <input type="text" name="office" placeholder="office here"><br>
-        <input type="number" name="age" placeholder="age here"><br>
-        <input type="text" name="salary" placeholder="salary here"><br>
-        <input type="submit" name="Submit">
-    </form>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Create</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Admin Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <!-- End of navbar -->
+
+            
+            <!-- Content/rendering -->
+            <form method="post" action="/orders">
+                    <div class="form-group">
+                        <h4>Place a new order</h4>
+                        <input type="number" class="form-control" id="units1" aria-describedby="unitHelp" placeholder="Units" name="units">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="Submit">Submit</button>
+                </form>
+
+                <form method="post" action="/message">
+                <div class="form-group">
+                    <h4>Send a new message</h4>
+                    <input type="text" class="form-control" id="name1" aria-describedby="nameHelp" placeholder="Name" name="name">
+                    <textarea name="message" id="message1" placeholder="Message here" class="form-control"></textarea>
+                    <input type="submit" class="btn btn-primary" name="Submit">
+                </div>
+                </form>
+
+                <form method="post" action="/customer">
+                <h4>Add new Customer</h4>
+                <input type="text" class="form-control" id="name1" placeholder="Name" name="name">
+                <input type="text" class="form-control" id="position1" placeholder="Position" name="position">
+                <input type="text" class="form-control" id="office1" placeholder="Office" name="office">
+                <input type="number" class="form-control" id="age1" placeholder="Age" name="age">
+                <input type="text" class="form-control" id="salary1" placeholder="Salary" name="salary">
+                <input type="submit" class="btn btn-primary" name="Submit">
+                </form>
+
+    <!-- Javascript plugin -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

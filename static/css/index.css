@@ -1,0 +1,79 @@
+.navbar-light {
+    background-color: #f06292;
+}
+
+
+/* place a new order */
+
+h3 {
+    font-family: Poppins;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+
+#units1 {
+    width:40%;
+    margin-left: 3%;
+}
+
+.btn {
+    margin-left: 3%;
+    background-color:#f06292;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* send a new message */
+
+h4 {
+    font-family: Poppins;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#name1 {
+    width:40%;
+    margin-left: 3%;
+}
+
+#message1 {
+    width:40%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+/* add customer */
+
+h5 {
+    font-family: Poppins;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#position1 {
+    width:40%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#office1 {
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+
+#age1 {
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+
+#salary1 {
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
